@@ -271,6 +271,15 @@ class TestHeuristics < Minitest::Test
     })
   end
 
+  def test_bf_by_heuristics
+    assert_heuristics({
+      "Beef" => all_fixtures("Beef", "*.bf"),
+      "Brainfuck" => all_fixtures("Brainfuck", "*.bf"),
+      "HyPhy" => all_fixtures("HyPhy", "*.bf"),
+      nil => all_fixtures("Befunge", "*.bf"),
+    })
+  end
+
   def test_bi_by_heuristics
     assert_heuristics({
       "FreeBasic" => all_fixtures("FreeBasic", "*.bi")
@@ -426,6 +435,13 @@ class TestHeuristics < Minitest::Test
       "Fluent" => all_fixtures("Fluent", "*.ftl"),
       "FreeMarker" => all_fixtures("FreeMarker", "*.ftl")
     }, alt_name="main.ftl")
+  end
+
+  def test_g_by_heuristics
+    assert_heuristics({
+      "GAP" => all_fixtures("GAP", "*.g*"),
+      "G-code" => all_fixtures("G-code", "*.g")
+    }, alt_name="test.g")
   end
 
   def test_gd_by_heuristics
@@ -804,6 +820,13 @@ class TestHeuristics < Minitest::Test
     })
   end
 
+  def test_scd_by_heuristics
+    assert_heuristics({
+      "SuperCollider" => all_fixtures("SuperCollider", "*"),
+      "Markdown" => all_fixtures("Markdown", "*.scd")
+    }, alt_name="test.scd")
+  end
+
   def test_sol_by_heuristics
     assert_heuristics({
       "Gerber Image" => Dir.glob("#{fixtures_path}/Generic/sol/Gerber Image/*"),
@@ -856,6 +879,13 @@ class TestHeuristics < Minitest::Test
       "Raku" => ["Raku/01-dash-uppercase-i.t", "Raku/01-parse.t", "Raku/advent2009-day16.t",
                  "Raku/basic-open.t", "Raku/calendar.t", "Raku/for.t", "Raku/hash.t",
                  "Raku/listquote-whitespace.t"]
+    })
+  end
+
+  def test_tag_by_heuristics
+    assert_heuristics({
+      "Java Server Pages" => Dir.glob("#{fixtures_path}/Generic/tag/Java Server Pages/*"),
+      nil => Dir.glob("#{fixtures_path}/Generic/tag/nil/*")
     })
   end
 

@@ -353,6 +353,10 @@ vendor/grammars/elixir-tmbundle:
 - source.elixir
 - text.elixir
 - text.html.elixir
+vendor/grammars/elvish:
+- source.elvish
+- source.elvish-transcript
+- source.elvish.in.markdown
 vendor/grammars/erlang.tmbundle:
 - source.erlang
 - text.html.erlang.yaws
@@ -372,6 +376,8 @@ vendor/grammars/gap-tmbundle:
 - source.gap
 vendor/grammars/gemfile-lock-tmlanguage:
 - source.gemfile-lock
+vendor/grammars/gemini-vscode:
+- source.gemini
 vendor/grammars/genero.tmbundle:
 - source.genero
 - source.genero-forms
@@ -389,6 +395,14 @@ vendor/grammars/grace:
 - source.grace
 vendor/grammars/gradle.tmbundle:
 - source.groovy.gradle
+vendor/grammars/graphiql:
+- inline.graphql
+- inline.graphql.php
+- inline.graphql.python
+- inline.graphql.re
+- inline.graphql.res
+- markdown.graphql.codeblock
+- source.graphql
 vendor/grammars/graphviz.tmbundle:
 - source.dot
 vendor/grammars/groovy.tmbundle:
@@ -443,7 +457,7 @@ vendor/grammars/jflex.tmbundle:
 - source.jflex
 vendor/grammars/kivy-language-grammer:
 - source.python.kivy
-vendor/grammars/kusto-syntax-highlighting:
+vendor/grammars/kusto-sublime:
 - source.kusto
 vendor/grammars/lang-4d:
 - source.4dm
@@ -523,6 +537,7 @@ vendor/grammars/language-etc:
 - source.openbsd-pkg.contents
 - source.opts
 - source.record-jar
+- source.sexp
 - source.shellcheckrc
 - source.sieve
 - source.smpl
@@ -571,8 +586,6 @@ vendor/grammars/language-grammars:
 - source.lex.regexp
 - source.pegjs
 - source.yacc
-vendor/grammars/language-graphql:
-- source.graphql
 vendor/grammars/language-haml:
 - text.haml
 - text.hamlc
@@ -587,6 +600,8 @@ vendor/grammars/language-haskell:
 - source.hsc2hs
 - source.hsig
 - text.tex.latex.haskell
+vendor/grammars/language-hocon:
+- source.hocon
 vendor/grammars/language-hql:
 - source.hql
 vendor/grammars/language-html:
@@ -673,6 +688,7 @@ vendor/grammars/language-ring:
 - source.ring
 vendor/grammars/language-roff:
 - hidden.manref
+- source.context
 - source.ditroff
 - source.ditroff.desc
 - source.gremlin
@@ -842,6 +858,7 @@ vendor/grammars/rascal-syntax-highlighting:
 vendor/grammars/razor-plus:
 - text.html.cshtml
 vendor/grammars/rescript-vscode:
+- markdown.rescript.codeblock
 - source.rescript
 vendor/grammars/riot-syntax-highlight:
 - text.html.riot
@@ -1049,6 +1066,7 @@ vendor/grammars/vscode-prisma:
 - inline.prisma
 - markdown.prisma.codeblock
 - source.prisma
+- source.ts.prismaClientRawSQL
 vendor/grammars/vscode-procfile:
 - source.procfile
 vendor/grammars/vscode-proto3:
