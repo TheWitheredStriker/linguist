@@ -1,13 +1,13 @@
 ---
 name: language-etc
-version: 2ab09f098fd13a84c391d726c977d6d187aee62f
+version: 1455feb6de582239b67e8bbde8086569db377e3d
 type: git_submodule
 homepage: https://github.com/Alhadis/language-etc
 license: isc
 licenses:
 - sources: LICENSE.md
   text: |
-    Copyright (c) 2018-2022, John Gardner
+    Copyright (c) 2018-2024, John Gardner
 
     Permission to use, copy, modify, and/or distribute this software for any
     purpose with or without fee is hereby granted, provided that the above
